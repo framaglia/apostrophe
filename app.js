@@ -5,12 +5,13 @@ var site = require('apostrophe-site')();
 
 site.init({
 
+
   // This line is required and allows apostrophe-site to use require() and manage our NPM modules for us.
   root: module,
-  shortName: 'apostrophe-sandbox',
-  hostName: 'apostrophe-sandbox',
-  title: 'Apostrophe Sandbox',
-  sessionSecret: 'apostrophe sandbox demo party',
+  shortName: 'creativeImagination',
+  hostName: 'creativeImagination',
+  title: 'creative Imagination',
+  sessionSecret: 'asd1f928fg7456',
   adminPassword: 'demo',
 
   // Force a2 to prefix all of its URLs. It still
@@ -44,9 +45,10 @@ site.init({
 
   pages: {
     types: [
-      { name: 'default', label: 'Default Page' },
+      { name: 'default', label: 'Default (Two Column)' },
       { name: 'home', label: 'Home Page' },
-      { name: 'blog', label: 'Blog' }
+      { name: 'blog', label: 'Blog' },
+      { name: 'events', label: 'Events' }
     ]
   },
 
@@ -115,8 +117,6 @@ site.init({
     'apostrophe-browserify': {
       files: ["./public/js/modules/_site.js"]
     },
-    'apostrophe-demo-login': {
-    }
   },
 
   // These are assets we want to push to the browser.
