@@ -30,12 +30,6 @@ site.init({
   // which requires login
   secondChanceLogin: true,
 
-  mongo: {
-  uri: process.env.MONGOLAB_URI ||
-       process.env.MONGOHQ_URL ||
-       'mongodb://localhost/fullstack'
-},
-
   locals:  require('./lib/locals.js'),
 
   // you can define lockups for areas here
